@@ -1,0 +1,17 @@
+@import '../partials/color';
+@import '../partials/general';
+@import '../partials/media-queries';
+@import '../partials/mixin';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    line-height: 1.2;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
