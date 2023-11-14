@@ -1,0 +1,54 @@
+@import '../partials/mixin';
+@import "../partials/media-queries";
+
+nav{
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    display: grid;
+    @include gradientBackground();
+    background-color: $primary-color;
+}
+
+.nav{
+    position: relative;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    button{
+        display: none;
+    }
+
+    a{
+        color: $white-color;
+        font-size: .9rem;
+        font-weight: 200;
+    }
+
+    .nav_logo{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    @include tablet{
+        ul{
+            display: none;
+        }
+
+        .nav_open{
+            display: inline-block;
+            background: transparent;
+            color: $white-color;
+        }
+    } 
+    // background-color: aqua;
+}
